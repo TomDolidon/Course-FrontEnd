@@ -1,0 +1,19 @@
+body #content {
+  margin-top: 80px; }
+  body #content table {
+    border-collapse: collapse; }
+    body #content table:first-child {
+      background: #287205; }
+    body #content table #tableAnimaux tr:nth-child(even) {
+      background: #9ee47c; }
+    body #content table #tableAnimaux tr:nth-child(odd) {
+      background: #ccb1a0; }
+    body #content table #tableAnimaux tr:hover {
+      background: grey; }
+    body #content table img {
+      width: 150px;
+      height: 150px; }
+  body #content table, body #content th, body #content td {
+    border: 1px solid black; }
+
+/*# sourceMappingURL=animaux.css.map */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOLIDON</title>
+    <metaname="description" content="Zoo, service client" />
+    <metaname="author" content="Tom Dolidon" />
+
+    <!-- <meta name="robots" content="[[no]index][no[flollow]]" /> -->
+
+</head>
+
+<body>
+    <header>
+        <h1>ZOOLIDON </h1>
+    </header>
+
+    <h2>Contacts </h2>
+
+    <form action="" method="get">
+        <div>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom: </label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
+        <div>
+            <label for="mail">Adresse mèl : </label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div>
+            <label for="tel">Téléphone : </label>
+            <input type="tel" pattern="[0-9]{10}" name="tel" id="tel" required>
+        </div>
+        <div>
+            <label for="message">Message : </label>
+            <input type="text" name="message" id="message" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="envoyer">
+        </div>
+    </form>
+
+</body>
+
+</html>

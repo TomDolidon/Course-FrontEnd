@@ -1,0 +1,189 @@
+@use "sass:list";
+@use "sass:map";
+// Question 1:
+
+@for $i from 1 through 4 {
+  .taille-#{$i} {
+    width: 25% * $i;
+  }
+}
+
+// Question 2:
+
+@mixin generateTaille($max, $basePercentage: 25%) {
+  @for $i from 1 through $max {
+    .taille-#{$i} {
+      width: $basePercentage * $i;
+    }
+  }
+}
+
+ @include generateTaille(3, 33%);
+
+// Question 3:
+
+$tailles: ("petite", "standard", "moyenne", "grande");
+@for $i from 1 through 4 {
+  .taille-#{nth($tailles, $i)} {
+    width: 25% * $i;
+  }
+}
+
+// Question 4:
+
+@mixin generateStringTaille {
+  $tailles: ("petite", "standard", "moyenne", "grande");
+  @for $i from 1 through 4 {
+    .taille-#{nth($tailles, $i)} {
+      width: 25% * $i;
+    }
+  }
+}
+
+ @include generateStringTaille();
+
+// Question 5:
+
+@mixin generateStringTailleForClass($className) {
+  $tailles: ("petite", "standard", "moyenne", "grande");
+  @for $i from 1 through 4 {
+    .#{$className}-#{nth($tailles, $i)} {
+      width: 25% * $i;
+    }
+  }
+}
+
+ @include  generateStringTailleForClass("Test1");
+
+// Question 6:
+
+@function first($list) {
+  @return nth($list, 1);
+}
+
+// Question 7:
+
+@function last($list) {
+  @return nth($list, length($list));
+}
+
+// Question 8:
+
+$destinations: (
+  "espagne": "Espagne",
+  "maroc": "Maroc",
+  "bresil": "Brésil",
+  "caraibes": "Les îles caraibes"
+);
+
+// Question 9:
+
+@each $key, $city in $destinations {
+  .ville-#{$key}::before {
+    display: block;
+    content: "#{$city}";
+  }
+}
+
+// Question 10:
+
+@mixin generateDestinationsFromList($list, $isBefore) {
+  @each $key, $city in $destinations {
+    @if $isBefore {
+      .ville-#{$key}::before {
+        display: block;
+        content: "#{$city}";
+      }
+    } @else {
+      .ville-#{$key}::after {
+        display: block;
+        content: "#{$city}";
+      }
+    }
+  }
+}
+
+ @include generateDestinationsFromList($destinations, false);
+
+// Question 11:
+
+$socials: (
+  "facebook": (
+    "color": #4267b2,
+    "background-color": #4267b2
+  ),
+  "twitter": (
+    "color": #1da1f2,
+    "background-color": #1da1f2
+  ),
+  "linkedin": (
+    "color": #006699,
+    "background-color": #006699
+  ),
+  "instagram": (
+    "color": #455dc7,
+    "background-color": #455dc7
+  ),
+  "pinterest": (
+    "color": #cd1f28,
+    "background-color": #cd1f28
+  ),
+  "youtube": (
+    "color": #ff0000,
+    "background-color": #ff0000
+  )
+);
+
+// Question 12:
+
+@each $socialName, $mapColor in $socials {
+  .fa-#{$socialName} {
+    background-color: white;
+    color: map.get($mapColor, "color");
+    width: 48px;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 48px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Question 13:
+
+@mixin generateSocialStyle($opacity) {
+  @each $socialName, $mapColor in $socials {
+    $transparencyColor: rgba(map.get($mapColor, "background-color"), $opacity);
+
+    .fa-#{$socialName} {
+      background-color: $transparencyColor;
+      color: map.get($mapColor, "color");
+      width: 48px;
+    }
+  }
+}
+
+ @include generateSocialStyle(0.5);
+
+// Question 14:
+
+@mixin generateSocialStyleLighterDarker($opacity, $lightValue, $darkValue) {
+  @each $socialName, $mapColor in $socials {
+    $transparencyColor: rgba(map.get($mapColor, "background-color"), $opacity);
+    $lighterColor: lighten($transparencyColor, $lightValue);
+    $darkerColor: darken($lighterColor, $darkValue);
+
+    .fa-#{$socialName} {
+      background-color: $darkerColor;
+      color: map.get($mapColor, "color");
+      width: 48px;
+    }
+  }
+}

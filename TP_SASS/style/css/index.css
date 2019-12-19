@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.taille-1 {
+  width: 25%;
+}
+
+.taille-2 {
+  width: 50%;
+}
+
+.taille-3 {
+  width: 75%;
+}
+
+.taille-4 {
+  width: 100%;
+}
+
+.taille-1 {
+  width: 33%;
+}
+
+.taille-2 {
+  width: 66%;
+}
+
+.taille-3 {
+  width: 99%;
+}
+
+.taille-petite {
+  width: 25%;
+}
+
+.taille-standard {
+  width: 50%;
+}
+
+.taille-moyenne {
+  width: 75%;
+}
+
+.taille-grande {
+  width: 100%;
+}
+
+.taille-petite {
+  width: 25%;
+}
+
+.taille-standard {
+  width: 50%;
+}
+
+.taille-moyenne {
+  width: 75%;
+}
+
+.taille-grande {
+  width: 100%;
+}
+
+.Test1-petite {
+  width: 25%;
+}
+
+.Test1-standard {
+  width: 50%;
+}
+
+.Test1-moyenne {
+  width: 75%;
+}
+
+.Test1-grande {
+  width: 100%;
+}
+
+.ville-espagne::before {
+  display: block;
+  content: "Espagne";
+}
+
+.ville-maroc::before {
+  display: block;
+  content: "Maroc";
+}
+
+.ville-bresil::before {
+  display: block;
+  content: "Brésil";
+}
+
+.ville-caraibes::before {
+  display: block;
+  content: "Les îles caraibes";
+}
+
+.ville-espagne::after {
+  display: block;
+  content: "Espagne";
+}
+
+.ville-maroc::after {
+  display: block;
+  content: "Maroc";
+}
+
+.ville-bresil::after {
+  display: block;
+  content: "Brésil";
+}
+
+.ville-caraibes::after {
+  display: block;
+  content: "Les îles caraibes";
+}
+
+.fa-facebook {
+  background-color: white;
+  color: #4267b2;
+  width: 48px;
+}
+
+.fa-twitter {
+  background-color: white;
+  color: #1da1f2;
+  width: 48px;
+}
+
+.fa-linkedin {
+  background-color: white;
+  color: #006699;
+  width: 48px;
+}
+
+.fa-instagram {
+  background-color: white;
+  color: #455dc7;
+  width: 48px;
+}
+
+.fa-pinterest {
+  background-color: white;
+  color: #cd1f28;
+  width: 48px;
+}
+
+.fa-youtube {
+  background-color: white;
+  color: #ff0000;
+  width: 48px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 48px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: rgba(66, 103, 178, 0.5);
+  color: #4267b2;
+  width: 48px;
+}
+
+.fa-twitter {
+  background-color: rgba(29, 161, 242, 0.5);
+  color: #1da1f2;
+  width: 48px;
+}
+
+.fa-linkedin {
+  background-color: rgba(0, 102, 153, 0.5);
+  color: #006699;
+  width: 48px;
+}
+
+.fa-instagram {
+  background-color: rgba(69, 93, 199, 0.5);
+  color: #455dc7;
+  width: 48px;
+}
+
+.fa-pinterest {
+  background-color: rgba(205, 31, 40, 0.5);
+  color: #cd1f28;
+  width: 48px;
+}
+
+.fa-youtube {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #ff0000;
+  width: 48px;
+}
+
+/*# sourceMappingURL=index.css.map */
