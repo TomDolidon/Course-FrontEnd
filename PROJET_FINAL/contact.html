@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOLIDON</title>
+    <metaname="description" content="Zoo, service client" />
+    <metaname="author" content="Tom Dolidon" />
+
+    <link rel="stylesheet" type="text/css" href="./style/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/global.css">
+
+    <!-- <meta name="robots" content="[[no]index][no[flollow]]" /> -->
+
+</head>
+
+<body>
+        <header id="header">
+                <div id="logo"><a href="./index.html"> ZOOLIDON </a> </div>
+        
+                <img id="after" src="./res/img/design/after.png" alt="">
+            
+                <nav id="menu">
+                    <ul>
+                        <li class="deroulant"> <a href="./menu.html">Menu</a>
+                            <ul>
+                                <li class="sous"><a href="#">Connexion</a></li>
+                                <li class="sous"><a href="#"> Recherche </a></li>
+                                <li class="sous"><a href="#"> Billeterie </a></li>
+                                <li class="sous"><a href="#"> Promotions </a></li>
+                            </ul>
+            
+                        </li>
+                        <li class="deroulant"><a href="./services.html">Services</a>
+                        </li>
+                        <li class="deroulant"> <a href="./animaux.html">Nos animaux</a>
+                            <ul>
+                                <li class="sous"><a href="./banqueSon.html">Banque de sons</a></li>
+                                <li class="sous"><a href="./sceneVideo.html">Scènes vidéos</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"> <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+            
+                </nav>
+            
+            </header>
+
+        <div id="content"> 
+    <h2>Contacts </h2>
+
+    <form action="" method="get">
+        <div>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom: </label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
+        <div>
+            <label for="mail">Adresse mèl : </label>
+            <input type="email" name="mail" id="mail" required>
+        </div>
+        <div>
+            <label for="tel">Téléphone : </label>
+            <input type="tel" pattern="[0-9]{10}" name="tel" id="tel" required>
+        </div>
+        <div>
+            <label for="message">Message : </label>
+            <input type="text" name="message" id="message" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="envoyer">
+        </div>
+    </form>
+</div>
+
+</body>
+
+</html>

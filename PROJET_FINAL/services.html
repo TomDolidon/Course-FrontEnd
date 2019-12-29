@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOLIDON</title>
+    <metaname="description" content="Zoo, service client" />
+    <metaname="author" content="Tom Dolidon" />
+
+    <link rel="stylesheet" type="text/css" href="./style/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/global.css">
+    <!-- <meta name="robots" content="[[no]index][no[flollow]]" /> -->
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7652469209.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- CSS Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <!-- Script leaflet -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- custom markers -->
+    <link rel="stylesheet" href="style/css/leaflet.extra-markers.min.css">
+    <script src="js/leaflet.extra-markers.min.js"></script>
+
+    <!-- animation on marker : bouncing -->
+    <script type="text/javascript" src="js/leaflet.smoothmarkerbouncing.js"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo"><a href="./index.html"> ZOOLIDON </a> </div>
+
+        <img id="after" src="./res/img/design/after.png" alt="">
+
+        <nav id="menu">
+            <ul>
+                <li class="deroulant"> <a href="./menu.html">Menu</a>
+                    <ul>
+                        <li class="sous"><a href="#">Connexion</a></li>
+                        <li class="sous"><a href="#"> Recherche </a></li>
+                        <li class="sous"><a href="#"> Billeterie </a></li>
+                        <li class="sous"><a href="#"> Promotions </a></li>
+                    </ul>
+
+                </li>
+                <li class="active"><a href="./services.html">Services</a></li>
+                <li class="deroulant"> <a href="./animaux.html">Nos animaux</a>
+                    <ul>
+                        <li class="sous"><a href="./banqueSon.html">Banque de sons</a></li>
+                        <li class="sous"><a href="./sceneVideo.html">Scènes vidéos</a></li>
+                    </ul>
+                </li>
+                <li> <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div id="content" class="container">
+
+        <div class="row"> 
+
+            <div > 
+
+                <h1> Retrouvez ici les informations relatives à nos zoos partenaires</h1>
+
+                <div id="info">
+                    <h2> informations : </h2>
+        
+                </div>
+        
+                <div id="assistance">
+                    <h2> Assistance : </h2>
+        
+                </div>
+        
+                <div id="localisation" >
+                    <h2> Localisation : </h2>
+                    <div id="map" style="height: 500px; width: 600px; z-index: 0;"></div>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript" src="map.js"></script>
+
+
+</html>

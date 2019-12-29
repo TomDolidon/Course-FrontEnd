@@ -1,0 +1,40 @@
+
+@import 'color.scss';
+
+
+    #content{
+        table {
+            border-collapse: collapse;
+
+            &:first-child{
+                background: $primary_tint;
+
+            }
+
+            #tableAnimaux{
+
+                tr:nth-child(even) {
+                    background: $primary_lite;
+                }
+
+                tr:nth-child(odd) {
+                    background: $brown_lite;
+                }
+
+                tr:hover{
+                    background: grey;
+                }
+            }
+            
+            img{
+                width: 150px;
+                height: 150px;
+            };
+          }
+          
+          table, th, td {
+            border: 1px solid black;
+          }
+
+
+    }

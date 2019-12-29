@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZOOLIDON</title>
+    <metaname="description" content="Zoo, service client" />
+    <metaname="author" content="Tom Dolidon" />
+    <link rel="stylesheet" type="text/css" href="./style/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./style/css/animaux.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <meta name="robots" content="[[no]index][no[flollow]]" /> -->
+
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">ZOOLIDON </div>
+
+        <img id="after" src="./res/img/design/after.png" alt="">
+    
+        <nav id="menu">
+            <ul>
+                <li class="deroulant"> <a href="./menu.html">Menu</a>
+                    <ul>
+                        <li class="sous"><a href="#">Connexion</a></li>
+                        <li class="sous"><a href="#"> Recherche </a></li>
+                        <li class="sous"><a href="#"> Billeterie </a></li>
+                        <li class="sous"><a href="#"> Promotions </a></li>
+                    </ul>
+    
+                </li>
+                <li class="deroulant"><a href="./services.html">Services</a>
+                </li>
+                <li class="deroulant active"> <a href="./animaux.html">Nos animaux</a>
+                    <ul>
+                        <li class="sous"><a href="./banqueSon.html">Banque de sons</a></li>
+                        <li class="sous"><a href="./sceneVideo.html">Scènes vidéos</a></li>
+                    </ul>
+                </li>
+                <li> <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+    
+        </nav>
+    
+    </header>
+
+    <div id="content"> 
+
+        <section> 
+
+        <table summary="liste des animaux">
+            <thead>
+                <caption> <h1> Nos animaux </h1></caption>
+                <tr>
+                    <th colspan="2"> Nom</th>
+                    <th colspan="1"> Description</th>
+                    <th colspan="1"> Pays natal</th>
+                    <th colspan="1"> Découvrir</th>
+                </tr>
+            </thead>
+            <tbody id="tableAnimaux">
+    
+    
+            </tbody>
+        </table>
+
+    </section>
+
+
+      <section>
+        <h2>Ajouter un animal</h2>
+        <form id="creation-form">
+          <div>
+            <label for="nom">Nom : </label>
+            <input
+              type="text"
+              name="nom"
+              id="field-nom"
+            />
+          </div>
+          <div>
+            <label for="description">Description : </label>
+            <input
+              type="text"
+              name="description"
+              id="field-description"
+            />
+          </div>
+          <div>
+            <label for="pays">Pays : </label>
+            <input
+              type="text"
+              name="pays"
+              id="field-pays"
+            />
+          </div>
+          <div>
+            <label for="imageURL">Image URL : </label>
+            <input
+              type="text"
+              name="imageURL"
+              id="field-imageURL"
+            />
+          </div>
+          <button id="submitAnimal" class="submit" type="submit">
+            Ajouter
+          </button>
+        </form>
+      </section>
+
+    </div>
+    
+    
+
+</body>
+
+<script type="text/javascript" src="animaux.js"></script>
+
+
+</html>
